@@ -17,8 +17,8 @@ on:
         steps:
           - uses: actions/checkout@v3
           - uses: actions/setup-python@v4
-              with:
-                python-version: 3.X
+            with:
+              python-version: 3.X
           - uses: actions/cache@v2
             with:
               path: .cache
