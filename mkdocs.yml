@@ -1,0 +1,82 @@
+site_name: Python Bible
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark theme
+      font:
+        text: black
+        code: black
+    - scheme: slate
+      primary: slate
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light theme
+      font:
+        text: white
+        code: white
+      primary: deep_orange
+      accent: orange
+      # Used in the links and the footer
+      text: orange
+      # Used as the background for the search box
+      search: orange
+      # Used as the background for the navigation and the footer
+      background: white
+      # Used for the navigation text and most accents
+      # Can also be used for the footer
+      primary-text: black
+      # Used for the headings, button text, and navigation icons
+      secondary-text: black
+      # Used as the background color for the navigation
+      navigation: white
+      # Used for the headings, button text, and navigation icons
+      navigation-text: black
+      # Used as the background color for the navigation
+      navigation-background: white
+      # Used as the background color for the navigation
+      navigation-highlight: orange
+      # Used for the headings, button text, and navigation icons
+
+copyright: |
+  &copy; 2023 Pablo Martínez Roca
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Prof-Pablo-Roca-Philips/python-bible
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/pablomartinezroca/
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:pymdownx.emoji.twemoji      
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences
